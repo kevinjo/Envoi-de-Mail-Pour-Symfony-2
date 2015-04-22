@@ -1,0 +1,3 @@
+ app.mail:
+    class:  App\MonBundle\Services\Mailer
+    arguments: [@mailer,@templating]
