@@ -24,7 +24,7 @@ private $template;
 	 * send function.
 	 * 
 	 * @access public
-	 * @param string $subject
+	 * @param string $subject Object
 	 * @param string $recipient Email(s) des destinataires
 	 * @param string $sender Email de l'expéditeur
 	 * @param string $bundle (default: null) Template à utiliser
