@@ -3,9 +3,9 @@
 	// ...
 $serviceMail = $this->get('app.mail');
 
-$mail= $serviceMail->send('[Boutique]Réservation de nom de domaine pour '.$pharmacist->getName(),
-		array('hostmaster@pharmonweb.com','info@lagencedepub.com'), 
-		'info@lagencedepub.com', 
+$mail= $serviceMail->send('Sujet',
+		array('destinataire','autre destinataire'), 
+		'expediteur', 
 		'AppMonBundle:Default:index.mail.twig',
 		array(
 		'name'=>'John Doe',
