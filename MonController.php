@@ -10,6 +10,7 @@ $mail= $serviceMail->send('Sujet',
 		array(
 		'name'=>'John Doe',
 		'message' =>'Parturient Egestas Nibh Sem Parturient Egestas Nibh Sem',
+		array() //attachment
 		)
 	);
 	
