@@ -1,6 +1,5 @@
 <?php
 
-	// ...
 $serviceMail = $this->get('app.mail');
 
 $mail= $serviceMail->send('Sujet',
