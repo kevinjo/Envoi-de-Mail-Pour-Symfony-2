@@ -4,7 +4,7 @@ Déclarer le service dans config.yml ou services.yml selon votre configuration:
 
     app.mail:
         class:  App\MonBundle\Services\Mailer
-        arguments: [@mailer,@templating]</code>
+        arguments: [@mailer,@templating]
 
 Exemple d'utilisation dans MonController.php.
 
