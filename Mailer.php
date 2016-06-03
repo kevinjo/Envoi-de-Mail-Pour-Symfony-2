@@ -30,12 +30,17 @@ private $template;
 	 * @param Array $attachment  Pièce Jointe
 	 * @return boolean
 	 */
-	public function send($subject,$recipient,$sender, $bundle= null, array $options, Array $attachment){
+	public function send($subject,$recipient,$sender, array $bbc, $bundle= null, array $options, Array $attachment){
 		$message = \Swift_Message::newInstance();
 		$message->setSubject($subject)
 		->setContentType('text/html')
-		->setCharset('utf-8')
-		->setTo($recipient)
+		->setCharset('utf-8');
+		
+		if(!empty($bbc)){
+			$message->setBcc($bbc);
+		}
+		
+		$message->setTo($recipient)
 		->setFrom($sender);
 
 		if(!empty($bundle)){
